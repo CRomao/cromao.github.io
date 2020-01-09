@@ -3,58 +3,62 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #9faef8;
 }
 
 button{
     width: 50%;
-    height: 80%; 
+    height: 100%; 
     float: left;
-    background-color: #00a8ff;
+    background-color: #0652DD;
     color: white;
     font-size: 170%;
 	font-weight: bold;
     border-style: solid;
-    border-color: #00a8ff;
+    border-color: #0652DD;
     border-radius:10px;
 
 }
 
 p{
+    top: 25%;
     width: 50%;
     margin: 0;
     overflow: hidden; 
     text-align: center;
+    position: relative;
     font-size: 170%;
     font-weight: bold;
+    height: 50%;
+    
+    vertical-align: middle;
+    /*height: 100%;*/
+    
 }
 
 .total{
     float: left;
     width: 50%;
-    height: 100%;
-    background-color:#dcdde1;
+    height: 75%;
+    background-color:rgb(240, 238, 238);
+    border-radius:10px;
 }
 
 .botao{
     width: 100%;
-    height: 18%;
-    background-color:#dcdde1;
-}
-
-.botaoTotal{
-    width: 100%;
-    height: 10%;
-    background-color:#7f8fa6;
+    height: 16.66%;
+    background-color:rgb(240, 238, 238);
+    border-radius:10px;
 }
 
 .container{
     width: 45%;
-    height: 60%;
+    height: 50%;
     top: 50%;
     position: relative;
     margin-left: 25%;
-    background-color: blue;
     transform: translateY(-50%);
+    border-radius:10px;
 }
 
 @media (max-width: 479px) {
@@ -62,6 +66,11 @@ p{
         width: 100%;
         margin-left: 0;
         height: 100%;
+        
+    }
+    p{
+        top:0;
+        padding-top:25px;
     }
 
 }

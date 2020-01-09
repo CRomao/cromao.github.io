@@ -1,9 +1,9 @@
 tipoPao = new Array(5);
-tipoPao[0] = document.querySelector("#cart");
-tipoPao[1] = document.querySelector("#leit");
-tipoPao[2] = document.querySelector("#cari");
+tipoPao[0] = document.querySelector("#cari");
+tipoPao[1] = document.querySelector("#cart");
+tipoPao[2] = document.querySelector("#coco");
 tipoPao[3] = document.querySelector("#doce");
-tipoPao[4] = document.querySelector("#coco");
+tipoPao[4] = document.querySelector("#leit");
 
 totalPaes = document.querySelector(".totalPaes");
 
