@@ -25,7 +25,7 @@ p{
     overflow: hidden; 
     text-align: center;
     font-size: 170%;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .total{
@@ -55,4 +55,12 @@ p{
     margin-left: 25%;
     background-color: blue;
     transform: translateY(-50%);
+}
+
+@media (max-width: 479px) {
+    .container{
+        width: 100%;
+        margin-left: 0;
+    }
+
 }

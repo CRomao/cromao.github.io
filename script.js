@@ -7,8 +7,6 @@ tipoPao[4] = document.querySelector("#coco");
 
 totalPaes = document.querySelector(".totalPaes");
 
-
-
 function add(num){
     switch(num){
         case 0:
