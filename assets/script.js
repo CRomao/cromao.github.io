@@ -39,19 +39,19 @@ function sub(num){
             parseInt(tipoPao[0].innerHTML) < 0 ? tipoPao[0].innerHTML = 0 : totalPaes.innerHTML = parseInt(totalPaes.innerHTML) - 1;
             break;
         case 1:
-            tipoPao[1].innerHTML = eval(parseInt(tipoPao[1].innerHTML) - 1);
+            tipoPao[1].innerHTML = parseInt(tipoPao[1].innerHTML) - 1;
             parseInt(tipoPao[1].innerHTML) < 0 ? tipoPao[1].innerHTML = 0 : totalPaes.innerHTML = parseInt(totalPaes.innerHTML) - 1;
             break;
         case 2:
-            tipoPao[2].innerHTML = eval(parseInt(tipoPao[2].innerHTML) - 1);
+            tipoPao[2].innerHTML = parseInt(tipoPao[2].innerHTML) - 1;
             parseInt(tipoPao[2].innerHTML) < 0 ? tipoPao[2].innerHTML = 0 : totalPaes.innerHTML = parseInt(totalPaes.innerHTML) - 1;
             break;
         case 3:
-            tipoPao[3].innerHTML = eval(parseInt(tipoPao[3].innerHTML) - 1);
+            tipoPao[3].innerHTML = parseInt(tipoPao[3].innerHTML) - 1;
             parseInt(tipoPao[3].innerHTML) < 0 ? tipoPao[3].innerHTML = 0 : totalPaes.innerHTML = parseInt(totalPaes.innerHTML) - 1;
             break;
         case 4:
-            tipoPao[4].innerHTML = eval(parseInt(tipoPao[4].innerHTML) - 1);
+            tipoPao[4].innerHTML = parseInt(tipoPao[4].innerHTML) - 1;
             parseInt(tipoPao[4].innerHTML) < 0 ? tipoPao[4].innerHTML = 0 : totalPaes.innerHTML = parseInt(totalPaes.innerHTML) - 1;
             break;
     }
