@@ -10,8 +10,8 @@ totalPaes = document.querySelector(".totalPaes");
 function add(num){
     for(let i=0; i<tipoPao.length; i++){
         if(num == i){
-            tipoPao[i].innerHTML = parseInt(tipoPao[i].innerHTML) + 1;
-            totalPaes.innerHTML = parseInt(totalPaes.innerHTML) + 1;
+            parseInt(tipoPao[i].innerHTML++);
+            parseInt(totalPaes.innerHTML++);
             break;
         }
     }
@@ -20,8 +20,8 @@ function add(num){
 function sub(num){
     for(let i=0; i<tipoPao.length; i++){
         if(num == i){
-            tipoPao[i].innerHTML = parseInt(tipoPao[i].innerHTML) - 1;
-            parseInt(tipoPao[i].innerHTML) < 0 ? tipoPao[i].innerHTML = 0 : totalPaes.innerHTML = parseInt(totalPaes.innerHTML) - 1;
+            parseInt(tipoPao[i].innerHTML--);
+            parseInt(tipoPao[i].innerHTML) < 0 ? tipoPao[i].innerHTML = 0 : parseInt(totalPaes.innerHTML--);
             break;
         }
     }
