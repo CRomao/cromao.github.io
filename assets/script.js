@@ -7,11 +7,21 @@ tipoPao[4] = document.querySelector("#leit");
 
 totalPaes = document.querySelector(".totalPaes");
 
-totalPaes.innerHTML = localStorage.getItem("totalPaes");
 
-for(let i=0; i<tipoPao.length; i++){
-    tipoPao[parseInt(i)].innerHTML = localStorage.getItem(String(i));
+
+if (!localStorage.primeiraVisita){    
+    localStorage.setItem("totalPaes", totalPaes.innerHTML);
+    for(let i=0; i<tipoPao.length; i++){
+        localStorage.setItem(String(i), tipoPao[parseInt(i)].innerHTML);
+    }
+    localStorage.primeiraVisita = 1;
+}else{    
+    totalPaes.innerHTML = localStorage.getItem("totalPaes");
+    for(let i=0; i<tipoPao.length; i++){
+        tipoPao[parseInt(i)].innerHTML = localStorage.getItem(String(i));
+    }
 }
+
 
 function cleanStorage(){
     localStorage.setItem("totalPaes", 0);
