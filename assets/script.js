@@ -5,18 +5,22 @@ tipoPao[2] = document.querySelector("#coco");
 tipoPao[3] = document.querySelector("#doce");
 tipoPao[4] = document.querySelector("#leit");
 
+totalValor = document.querySelector(".total-valor");
+
 totalPaes = document.querySelector(".totalPaes");
 
 
 
 if (!localStorage.primeiraVisita){    
     localStorage.setItem("totalPaes", totalPaes.innerHTML);
+    localStorage.setItem("totalValor", totalValor.innerHTML);
     for(let i=0; i<tipoPao.length; i++){
         localStorage.setItem(String(i), tipoPao[parseInt(i)].innerHTML);
     }
     localStorage.primeiraVisita = 1;
 }else{    
     totalPaes.innerHTML = localStorage.getItem("totalPaes");
+    totalValor.innerHTML = localStorage.getItem("totalValor");
     for(let i=0; i<tipoPao.length; i++){
         tipoPao[parseInt(i)].innerHTML = localStorage.getItem(String(i));
     }
@@ -25,7 +29,9 @@ if (!localStorage.primeiraVisita){
 
 function cleanStorage(){
     localStorage.setItem("totalPaes", 0);
+    localStorage.setItem("totalValor", "R$ 0,00");
     totalPaes.innerHTML = 0;
+    totalValor.innerHTML = "R$ 0,00";
     for(let i=0; i<tipoPao.length; i++){
         tipoPao[i].innerHTML = 0;
         localStorage.setItem(String(i), 0);
@@ -41,6 +47,9 @@ function add(num){
             parseInt(i);
             parseInt(totalPaes.innerHTML++);
             localStorage.setItem("totalPaes", totalPaes.innerHTML);
+            let valor = (parseInt(totalPaes.innerHTML)*0.25).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+            totalValor.innerHTML = (valor);
+            localStorage.setItem("totalValor", valor);
             break;
         }
     }
@@ -54,6 +63,9 @@ function sub(num){
             localStorage.setItem(String(i), tipoPao[parseInt(i)].innerHTML);
             parseInt(i);
             localStorage.setItem("totalPaes", totalPaes.innerHTML);
+            let valor = (parseInt(totalPaes.innerHTML)*0.25).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+            totalValor.innerHTML = (valor);
+            localStorage.setItem("totalValor", valor);
             break;
         }
     }

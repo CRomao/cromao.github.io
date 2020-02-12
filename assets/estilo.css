@@ -47,10 +47,15 @@ p{
 
 .total{
     float: left;
-    width: 50%;
+    width: 30%;
     height: 75%;
     background-color:rgb(240, 238, 238);
     border-radius:10px;
+}
+
+.total-valor{
+    float: left;
+    width: 20%;
 }
 
 .row{
