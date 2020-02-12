@@ -103,9 +103,9 @@ p{
     .total{
         top: 5%;
         float: left;
-        width: 30%;
+        width: 25%;
         height: 75%;
-        font-size: 130%;
+        font-size: 150%;
         background-color:rgb(240, 238, 238);
         border-radius:10px;
     }
@@ -113,8 +113,8 @@ p{
     .total-valor{
         top: 5%;
         float: left;
-        width: 20%;
-        font-size: 140%;
+        width: 25%;
+        font-size: 150%;
     }
     
 }
