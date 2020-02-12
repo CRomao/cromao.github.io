@@ -90,7 +90,7 @@ p{
 }
 
 
-@media (max-width: 479px) {
+@media (max-width: 976px) {
     .container{
         width: 100%;
         margin-left: 0;
@@ -100,4 +100,21 @@ p{
         top:0;
         padding-top:25px;
     }
+    .total{
+        top: 5%;
+        float: left;
+        width: 30%;
+        height: 75%;
+        font-size: 130%;
+        background-color:rgb(240, 238, 238);
+        border-radius:10px;
+    }
+    
+    .total-valor{
+        top: 5%;
+        float: left;
+        width: 20%;
+        font-size: 140%;
+    }
+    
 }
