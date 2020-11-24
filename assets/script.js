@@ -2,8 +2,8 @@ tipoPao = new Array(5);
 tipoPao[0] = document.querySelector("#cari");
 tipoPao[1] = document.querySelector("#cart");
 tipoPao[2] = document.querySelector("#coco");
-tipoPao[3] = document.querySelector("#doce");
-tipoPao[4] = document.querySelector("#leit");
+//tipoPao[3] = document.querySelector("#doce");
+//tipoPao[4] = document.querySelector("#leit");
 
 totalValor = document.querySelector(".total-valor");
 
@@ -47,7 +47,7 @@ function add(num){
             parseInt(i);
             parseInt(totalPaes.innerHTML++);
             localStorage.setItem("totalPaes", totalPaes.innerHTML);
-            let valor = (parseInt(totalPaes.innerHTML)*0.25).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+            let valor = (parseInt(totalPaes.innerHTML)*0.35).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
             totalValor.innerHTML = (valor);
             localStorage.setItem("totalValor", valor);
             break;
@@ -63,7 +63,7 @@ function sub(num){
             localStorage.setItem(String(i), tipoPao[parseInt(i)].innerHTML);
             parseInt(i);
             localStorage.setItem("totalPaes", totalPaes.innerHTML);
-            let valor = (parseInt(totalPaes.innerHTML)*0.25).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+            let valor = (parseInt(totalPaes.innerHTML)*0.35).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
             totalValor.innerHTML = (valor);
             localStorage.setItem("totalValor", valor);
             break;
