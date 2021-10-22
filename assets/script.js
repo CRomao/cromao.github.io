@@ -2,8 +2,9 @@ tipoPao = new Array(5);
 tipoPao[0] = document.querySelector("#cari");
 tipoPao[1] = document.querySelector("#cart");
 tipoPao[2] = document.querySelector("#coco");
-//tipoPao[3] = document.querySelector("#doce");
-//tipoPao[4] = document.querySelector("#leit");
+tipoPao[3] = document.querySelector("#rosquinha");
+//tipoPao[4] = document.querySelector("#doce");
+//tipoPao[5] = document.querySelector("#leit");
 
 totalValor = document.querySelector(".total-valor");
 
