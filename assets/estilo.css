@@ -10,26 +10,35 @@ button{
     width: 50%;
     height: 100%; 
     float: left;
-    background-color: rgb(18, 230, 28);
+    background-color: rgba(25, 135, 84, 1);
     color: white;
     font-size: 170%;
 	font-weight: bold;
     border-style: solid;
-    border-color: rgb(18, 230, 28);
+    border-color: transparent;
     border-radius:10px;
+}
+button:hover {
+	background-color: rgba(10, 54, 34, .9);
+	cursor: pointer;
 }
 
 .operador{
     width: 20%;
     height: 100%;
     float: left;
-    background-color: rgb(235, 50, 50);
+    background-color: rgba(220, 53, 69, 1);
     color: white;
     font-size: 170%;
 	font-weight: bold;
     border-style: solid;
-    border-color: rgb(235, 50, 50);
+    border-color: rgba(220, 53, 69, 1);
     border-radius:10px;
+}
+
+.operador:hover {
+	background-color: rgba(176, 42, 55, 1);
+	cursor: pointer;
 }
 
 p{
